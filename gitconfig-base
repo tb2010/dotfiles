@@ -1,0 +1,5 @@
+[user]
+	name = CHANGEME
+	email = CHANGEME
+[include]
+	path = dotfiles/gitconfig-include
