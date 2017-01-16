@@ -1,6 +1,7 @@
 # ~/.bashrc: executed by bash for non-login shells
 #
 
+ssh-add -A 2>/dev/null;
 
 ## HISTORY
 export HISTCONTROL=ignoredups:erasedups  # no duplicate entries
@@ -53,7 +54,7 @@ function parse_git_dirty {
 function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/($(parse_git_dirty)\1)/"
 }
-export PS1='\u@mbpr[$(basename "${PWD}")]$(parse_git_branch)\$ '
+export PS1='\[\e]0;\u@mbpr: \w\a\]\u@mbpr[$(basename "${PWD}")]$(parse_git_branch)\$ '
 
 # Add composer vendor path
 export PATH=$PATH:~/.composer/vendor/bin
