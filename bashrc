@@ -56,6 +56,9 @@ function parse_git_branch {
 }
 export PS1='\[\e]0;\u@mbpr: \w\a\]\u@mbpr[$(basename "${PWD}")]$(parse_git_branch)\$ '
 
+# Add brew sbin path
+export PATH=$PATH:/usr/local/sbin
+
 # Add composer vendor path
 export PATH=$PATH:~/.composer/vendor/bin
 
