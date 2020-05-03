@@ -11,5 +11,7 @@ OS specific settings will be identified and automated where possible.
 
 Files that end with -base should be copied and edited instead of linked.
 
+To override the the set the HOST variable in ~/.localrc along with any other settings
+that you want to keep private.
 
 
