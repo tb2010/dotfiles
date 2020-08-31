@@ -13,7 +13,7 @@ alias less="less -r"
 
 alias cdr='cd "$(git rev-parse --show-toplevel)"'
 
-# turn on colors for watch by default
+# enable colors in watch by default
 alias watch='watch -c '
 
 # open, pbcopy and pbpaste on linux
