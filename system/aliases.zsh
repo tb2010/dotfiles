@@ -13,8 +13,8 @@ alias less="less -r"
 
 alias cdr='cd "$(git rev-parse --show-toplevel)"'
 
-# quick hack to make watch work with aliases
-alias watch='watch -c -d -t '
+# turn on colors for watch by default
+alias watch='watch -c '
 
 # open, pbcopy and pbpaste on linux
 if [ "$(uname -s)" != "Darwin" ]; then
